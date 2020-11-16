@@ -6,15 +6,6 @@ namespace DS_HashTables
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Hash Tables Intro Problem");
-            //MyMapNode<string, string> hash = new MyMapNode<string, string>(5);
-            //hash.Add("0", "To");
-            //hash.Add("1", "be");
-            //hash.Add("2", "or");
-            //hash.Add("3", "not");
-            //hash.Add("4", "to");
-            //hash.Add("5", "be");
-            //hash.GetFrequency("or");
-
             MyMapNode<string, string> hash = new MyMapNode<string, string>(5);
             hash.Add("0", "Paranoids");
             hash.Add("1", "are");
@@ -36,7 +27,8 @@ namespace DS_HashTables
             hash.Add("17", "avoidable");
             hash.Add("18", "situations");
             hash.GetFrequency("paranoid");
-            hash.DisplayFrequency();
+            hash.RemoveValue("avoidable");
+            hash.GetFrequency("avoidable");
         }
     }
 }
